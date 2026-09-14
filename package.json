@@ -1,4 +1,10 @@
 {
+  "name": "capstone",
+  "private": true,
+  "scripts": {
+    "build": "npm install --prefix frontend && npm run build --prefix frontend",
+    "start": "npm start --prefix frontend"
+  },
   "dependencies": {
     "axios": "^1.20.0",
     "bootstrap": "^5.3.8",
