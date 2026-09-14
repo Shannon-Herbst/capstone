@@ -1,4 +1,4 @@
-require('dotenv').config()
+require('dotenv').config({ quiet: true })
 
 const express = require('express')
 const mongoose = require('mongoose')
@@ -27,10 +27,11 @@ app.use('/api/listings', listingRoutes)
 app.use('/api/auth', authRoutes)
 app.use('/api/reservations', reservationRoutes)
 
-const port = process.env.PORT || 4000
+// Render sets PORT automatically — must use uppercase PORT, not port
+const port = Number(process.env.PORT) || 4000
 
 app.listen(port, '0.0.0.0', () => {
-    console.log('Server listening on port', port)
+    console.log(`Server listening on port ${port} (process.env.PORT=${process.env.PORT})`)
 
     if (!process.env.MONGO_URI) {
         console.error('MONGO_URI environment variable is not set')
