@@ -1,0 +1,207 @@
+body {
+  background-color: white;
+  margin: 0;
+}
+
+.pages {
+  background-color: white;
+}
+
+html, body {
+  overflow-x: hidden;
+}
+
+header {
+  background-color: white;
+}
+
+.logo {
+  height: 5vh;
+  width: 5vw;
+  color: #222222;
+}
+
+header .navbar-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 100%;
+  margin: 0;
+  padding: 1.5vh 2vw;
+  box-sizing: border-box;
+  color: #222222;
+}
+
+.home-page header {
+  background-color: black;
+}
+
+.home-page header .navbar-container {
+  color: white;
+}
+
+.home-page .logo {
+  color: white;
+}
+
+.staticnav {
+  display: flex;
+  align-items: center;
+  gap: 2vw;
+}
+
+.staticnav p {
+  margin: 0;
+}
+
+.rightnav {
+  display: flex;
+  align-items: center;
+  gap: 2vw;
+  text-decoration: none;
+}
+
+.navbar-username {
+  font-weight: 500;
+}
+
+.rightlink-wrapper {
+  position: relative;
+}
+
+.rightlink {
+  display: flex;
+  align-items: center;
+  gap: 0.5vw;
+  text-decoration: none;
+  background-color: white;
+  border: none;
+  border-radius: 1vw;
+  padding: 0.5vw 1vw;
+  cursor: pointer;
+  font: inherit;
+}
+
+.rightlink-dropdown {
+  display: none;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  min-width: 180px;
+  padding-top: 0.5rem;
+  z-index: 100;
+}
+
+.rightlink-dropdown::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 0.5rem;
+}
+
+.rightlink-dropdown-menu {
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+  padding: 0.5rem 0;
+  overflow: hidden;
+}
+
+.rightlink-wrapper.is-open .rightlink-dropdown {
+  display: block;
+}
+
+.rightlink-dropdown button,
+.rightlink-dropdown-link {
+  display: block;
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border: none;
+  background: none;
+  text-align: left;
+  color: #222222;
+  font-size: 0.95rem;
+  cursor: pointer;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+.rightlink-dropdown button:hover,
+.rightlink-dropdown-link:hover {
+  background-color: #f7f7f7;
+}
+
+.rightnav a,
+.rightnav a:link,
+.rightnav a:visited {
+  text-decoration: none;
+  color: inherit;
+}
+
+.rightnav a.rightlink {
+  
+  color: black;
+}
+
+.banner {
+  height: 92vh;
+  width: 92vw;
+  margin-left: 3vw;
+  margin-top: 2vh;
+}
+
+#banner {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.banner h3 {
+  position: absolute;
+  bottom: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;
+  margin: 0;
+}
+
+.banner button {
+  position: absolute;
+  bottom: 3%;
+  left: 50%;
+  transform: translateX(-50%);
+  color: black;
+  background-color: lightgray;
+  margin: 0;
+  border-radius: 1vw;
+  padding: 0.5vw 1.5vw;
+}
+
+h2 {
+  margin-left: 2vw;
+}
+
+h3 {
+  padding-left: 2vw;
+}
+
+.footer-container {
+  background-color: lightgrey;
+  padding-left: 5vw;
+  padding-right: 5vw;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-container p {
+  color: gray;
+  font-size: 0.75rem;
+}
+
+.footer-container h4 {
+  font-size: 0.75rem;
+}

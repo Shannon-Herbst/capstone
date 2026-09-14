@@ -1,0 +1,89 @@
+.edit-listing {
+    background-color: white;
+    color: #222222;
+    min-height: calc(100vh - 80px);
+    padding: 2rem 3vw;
+    box-sizing: border-box;
+}
+
+.edit-listing h1 {
+    margin: 0 0 1.5rem;
+}
+
+.edit-listing-loading {
+    color: #717171;
+}
+
+.edit-listing-error {
+    color: #c13515;
+}
+
+.edit-listing-form {
+    max-width: 720px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.edit-listing-form label {
+    display: flex;
+    flex-direction: column;
+    gap: 0.35rem;
+    font-weight: 500;
+}
+
+.edit-listing-form input,
+.edit-listing-form textarea {
+    padding: 0.65rem 0.75rem;
+    border: 1px solid #dddddd;
+    border-radius: 8px;
+    font: inherit;
+    color: #222222;
+}
+
+.edit-listing-form textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+.edit-listing-actions {
+    display: flex;
+    gap: 0.75rem;
+    margin-top: 0.5rem;
+}
+
+.edit-listing-actions button {
+    padding: 0.65rem 1.25rem;
+    border: 1px solid #222222;
+    border-radius: 8px;
+    background-color: white;
+    cursor: pointer;
+    font: inherit;
+}
+
+.edit-listing-actions button[type='submit'] {
+    background-color: #222222;
+    color: white;
+}
+
+.edit-listing-actions button:disabled {
+    opacity: 0.7;
+    cursor: not-allowed;
+}
+
+.create-listing-checkboxes {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.create-listing-checkbox {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-weight: 500;
+}
+
+.create-listing-checkbox input {
+    width: auto;
+}

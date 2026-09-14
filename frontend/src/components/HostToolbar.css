@@ -1,0 +1,29 @@
+.host-toolbar {
+    display: flex;
+    gap: 0.75rem;
+    margin-bottom: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.host-toolbar-link {
+    padding: 0.5rem 1rem;
+    border: 1px solid #222222;
+    border-radius: 8px;
+    background-color: white;
+    color: #222222;
+    text-decoration: none;
+    font: inherit;
+}
+
+.host-toolbar-link:hover {
+    background-color: #f7f7f7;
+}
+
+.host-toolbar-link-primary {
+    background-color: #222222;
+    color: white;
+}
+
+.host-toolbar-link-primary:hover {
+    background-color: #444444;
+}

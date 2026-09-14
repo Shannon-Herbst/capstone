@@ -1,0 +1,149 @@
+.my-listings {
+    background-color: white;
+    color: #222222;
+    min-height: calc(100vh - 80px);
+    padding: 2rem 3vw;
+    box-sizing: border-box;
+}
+
+.my-listings h1 {
+    margin: 0 0 1.5rem;
+    font-size: 1.75rem;
+    text-align: center;
+}
+
+.my-listings-loading,
+.my-listings-empty {
+    color: #717171;
+}
+
+.my-listings-error {
+    color: #c13515;
+}
+
+.my-listings-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.my-listing-card {
+    display: flex;
+    border: 1px solid #dddddd;
+    border-radius: 12px;
+    overflow: hidden;
+    background-color: white;
+}
+
+.my-listing-left {
+    flex: 0 0 220px;
+    display: flex;
+    flex-direction: column;
+}
+
+.my-listing-image {
+    height: 180px;
+    overflow: hidden;
+}
+
+.my-listing-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.my-listing-actions {
+    display: flex;
+    gap: 0.5rem;
+    padding: 0.75rem;
+    background-color: #f7f7f7;
+}
+
+.my-listing-update,
+.my-listing-delete {
+    flex: 1;
+    padding: 0.5rem 0.75rem;
+    border: 1px solid #222222;
+    border-radius: 8px;
+    background-color: white;
+    color: #222222;
+    cursor: pointer;
+    font: inherit;
+}
+
+.my-listing-delete {
+    border-color: #c13515;
+    color: #c13515;
+}
+
+.my-listing-update:hover {
+    background-color: #f0f0f0;
+}
+
+.my-listing-delete:hover {
+    background-color: #fff5f3;
+}
+
+.my-listing-details {
+    flex: 1;
+    padding: 1rem 1.25rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    min-width: 0;
+}
+
+.my-listing-type {
+    margin: 0;
+    font-size: 0.9rem;
+    color: #717171;
+}
+
+.my-listing-details h2 {
+    margin: 0;
+    font-size: 1.25rem;
+    color: #222222;
+}
+
+.my-listing-meta {
+    margin: 0;
+    font-size: 0.9rem;
+    color: #717171;
+    line-height: 1.5;
+    flex: 1;
+}
+
+.my-listing-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #dddddd;
+    padding-top: 0.75rem;
+    margin-top: auto;
+}
+
+.my-listing-rating,
+.my-listing-price {
+    margin: 0;
+    color: #222222;
+}
+
+.my-listing-rating {
+    display: flex;
+    align-items: center;
+    gap: 0.35rem;
+    font-weight: 500;
+}
+
+.my-listing-star {
+    font-size: 0.85rem;
+}
+
+.my-listing-price strong {
+    font-weight: 700;
+}
+
+.my-listings button {
+    background-color: #dddddd;
+}

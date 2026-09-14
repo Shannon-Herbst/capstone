@@ -1,0 +1,160 @@
+.all-listings {
+    background-color: white;
+    color: #222222;
+    height: calc(100vh - 80px);
+    padding: 1vh 3vw;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.all-listings-header {
+    flex-shrink: 0;
+    margin-bottom: 0.8vh;
+}
+
+.all-listings-header h1 {
+    margin: 0;
+    color: #222222;
+    font-size: 1.35rem;
+}
+
+.all-listings-dates {
+    margin: 0.5vh 0 0;
+    color: #717171;
+    font-size: 0.9rem;
+}
+
+.all-listings-empty {
+    color: #717171;
+    flex-shrink: 0;
+}
+
+.all-listings-error {
+    color: #c13515;
+    flex-shrink: 0;
+}
+
+.all-listings-grid {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    min-height: 0;
+    overflow-y: auto;
+}
+
+.listing-card {
+    display: flex;
+    flex: 0 0 auto;
+    height: 160px;
+    border: 1px solid #dddddd;
+    border-radius: 0.75vw;
+    background-color: white;
+    overflow: hidden;
+    cursor: pointer;
+    transition: box-shadow 0.15s ease;
+}
+
+.listing-card:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+}
+
+.listing-image {
+    flex: 0 0 200px;
+    width: 200px;
+    height: 160px;
+    border-radius: 0.75vw 0 0 0.75vw;
+    overflow: hidden;
+}
+
+.listing-image img {
+    width: 200px;
+    height: 160px;
+    object-fit: cover;
+    display: block;
+}
+
+.listing-details {
+    flex: 1;
+    min-height: 0;
+    padding: 1vh 1.2vw 0.8vh;
+    box-sizing: border-box;
+    color: #222222;
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.35vh;
+}
+
+.listing-accommodation-type,
+.listing-location,
+.listing-meta,
+.listing-rating,
+.listing-price {
+    margin: 0;
+}
+
+.listing-accommodation-type {
+    font-size: 0.85rem;
+    color: #717171 !important;
+    flex-shrink: 0;
+}
+
+.listing-location {
+    flex-shrink: 0;
+}
+
+.listing-location-text {
+    display: inline-block;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #222222 !important;
+    border-bottom: 1px solid #dddddd;
+    padding-bottom: 0.25vh;
+}
+
+.listing-meta {
+    font-size: 0.8rem;
+    color: #717171 !important;
+    line-height: 1.35;
+    word-wrap: break-word;
+    flex: 1;
+    min-height: 0;
+}
+
+.listing-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #dddddd;
+    padding-top: 0.5vh;
+    margin-top: auto;
+    flex-shrink: 0;
+    background-color: white;
+}
+
+.listing-rating {
+    display: flex;
+    align-items: center;
+    gap: 0.4vw;
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: #222222 !important;
+}
+
+.listing-star {
+    color: black;
+    font-size: 0.8rem;
+}
+
+.listing-price {
+    font-size: 0.95rem;
+    color: #222222 !important;
+    text-align: right;
+}
+
+.listing-price strong {
+    font-weight: 700;
+}

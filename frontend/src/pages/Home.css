@@ -1,0 +1,258 @@
+.home {
+  background-color: white;
+}
+
+.home-banner-section {
+  background-color: black;
+}
+
+.home .search {
+  display: flex;
+  justify-content: center;
+  padding-top: 2vh;
+  position: relative;
+  z-index: 2;
+}
+
+.nonbanner-section {
+    background-color: white;
+    width: 100vw;
+}
+
+.inspiration-cards {
+    display: flex;
+    justify-content: space-between;
+    gap: 1vw;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.card {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    height: 40vh;
+    border-radius: 1vw;
+    overflow: hidden;
+    margin-left: 1vw;
+    margin-right: 1vw;
+}
+
+.card img {
+    height: 75%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.card-text {
+    height: 25%;
+    background-color: palevioletred;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0.5vw 1vw;
+    box-sizing: border-box;
+}
+
+.card-text h4,
+.card-text h5 {
+    margin: 0;
+    color: white;
+}
+
+.experiences-card-section {
+    display: flex;
+    justify-content: space-between;
+    gap: 1vw;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.experience-card {
+    flex: 1;
+    display: flex;
+    height: 70vh;
+    border-radius: 1vw;
+    overflow: hidden;
+    margin-left: 1vw;
+    margin-right: 1vw;
+    padding-bottom: 2vh;
+    position: relative;
+}
+
+.experience-card img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.experience-card-text {
+    position: absolute;
+    top: 3vw;
+    left: 1vw;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: transparent;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.experience-card-text h2 {
+    margin: 0;
+    color: white;
+}
+
+.experience-card-text button {
+    margin-top: 1.5vw;
+    border: none;
+    border-radius: 0.5vw;
+  padding: 0.5vw 1.5vw;
+}
+
+.experience-card-text button:hover {
+  background-color: pink;
+  cursor: pointer;
+}
+
+.gift-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2vw;
+    margin: 0 2vw;
+    padding-bottom: 2vh;
+    height: 30vh;
+}
+
+.gift-card-text {
+    flex-shrink: 0;
+}
+
+.gift-card-image {
+    flex-shrink: 0;
+}
+
+.gift-card-image img {
+    display: block;
+    /* max-width: min(420px, 40vw); */
+    width: 30vw;
+    height: 10vh;
+    max-height: 10vh;
+    object-fit: contain;
+}
+
+.gift-card-text h3{
+    font-size: 2rem;
+}
+
+.gift-card-text button {
+    background-color: black;
+    color: white;
+    border-radius: 0.5vw;
+  padding: 0.5vw 1.5vw;
+  border: none;
+  margin-left: 5vw;
+}
+
+.gift-card-text button:hover {
+    background-color: pink;
+    cursor: pointer;
+}
+
+.question-section {
+    position: relative;
+    display: flex;
+    height: 70vh;
+    overflow: hidden;
+    /* width: 100vw; */
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.question-card {
+    width: 90vw;
+    margin-left: 5vw;
+    margin-bottom: 2vh;
+}
+
+.question-section img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    display: block;
+    border-radius: 1vw;
+}
+
+.question-text {
+    position: absolute;
+    top: 3vw;
+    left: 1vw;
+    width: 30vw;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    box-sizing: border-box;
+    font-size: 2rem;
+    margin-left: 7vw;
+    padding-top: 2vw;
+}
+
+.question-text h1 {
+    margin: 0;
+    color: white;
+}
+
+.question-text button {
+    margin-top: 1.5vw;
+    border: none;
+    border-radius: 0.5vw;
+    padding: 0.5vw 1.5vw;
+    margin-top: 5vw;
+}
+
+.question-text button:hover {
+    background-color: pink;
+    cursor: pointer;
+}
+
+h3 {
+    margin-left: 3vw;
+}
+
+.home-footer-menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 90vw;
+    margin: 0 auto;
+    padding: 2vh 0 0 0;
+    box-sizing: border-box;
+    border-bottom: 3px solid #ccc;
+}
+
+.home-footer-menu p {
+    margin: 0;
+    padding-bottom: 0.8vw;
+    cursor: pointer;
+    border-bottom: 3px solid transparent;
+    transition: border-color 0.15s ease;
+    position: static;
+    bottom: auto;
+}
+
+.home-footer-menu p:first-child {
+    border-bottom: 3px solid pink;
+}
+
+.home-footer-menu p:hover {
+    border-bottom: 3px solid pink;
+}
+
+.home-footer-list {
+    display: flex;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    justify-content: space-between;
+}
