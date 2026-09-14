@@ -29,21 +29,22 @@ app.use('/api/reservations', reservationRoutes)
 
 const port = process.env.PORT || 4000
 
-if (!process.env.MONGO_URI) {
-    console.error('MONGO_URI environment variable is not set')
-    process.exit(1)
-}
+app.listen(port, '0.0.0.0', () => {
+    console.log('Server listening on port', port)
 
-mongoose.connect(process.env.MONGO_URI)
-    .then(() => {
-        app.listen(port, '0.0.0.0', () => {
-            console.log('connected to db & listening on port', port)
+    if (!process.env.MONGO_URI) {
+        console.error('MONGO_URI environment variable is not set')
+        return
+    }
+
+    mongoose.connect(process.env.MONGO_URI)
+        .then(() => {
+            console.log('Connected to MongoDB')
         })
-    })
-    .catch((error) => {
-        console.error('MongoDB connection error:', error.message)
-        process.exit(1)
-    })
+        .catch((error) => {
+            console.error('MongoDB connection error:', error.message)
+        })
+})
 
 
 
